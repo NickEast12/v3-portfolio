@@ -131,7 +131,7 @@ const About = () => {
             JavaScript, Node.js and React and looking to develop my skills
             further.
           </p>
-          <p className="today">
+          <p className="today willFade aboutFade">
             Fast-forward to today and I've had the privilege to work for a
             diverse array of clientele. I currently spend my time working on
             projects for
