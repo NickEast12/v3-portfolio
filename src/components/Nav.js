@@ -92,7 +92,7 @@ const NavStyles = styled.nav`
             align-items: center;
             align-self: center;
             button {
-              width: 120px;
+              width: 150px;
             }
           }
         }
@@ -282,7 +282,7 @@ const Nav = () => {
               </li>
               <li className="willFade navFade">
                 <button type="button" className="btn btn--main ">
-                  <span>Contact</span>
+                  <span>Contact me</span>
                 </button>
               </li>
             </ul>
@@ -308,7 +308,7 @@ const Nav = () => {
             >
               <li>
                 <button type="button" className="btn btn--main nav-button">
-                  <span>Say hello</span>
+                  <span>Contact me</span>
                 </button>
               </li>
             </a>

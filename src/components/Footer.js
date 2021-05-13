@@ -78,15 +78,33 @@ const Footer = () => {
         <div className="footer__wrapper">
           <Logo />
           <div className="footer__wrapper__icons">
-            <GithubIcon />
-            <LinkedinIcon />
-            <SpotifyIcon />
+            <a
+              href="https://github.com/NickEast12"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GithubIcon />
+            </a>
+            <a
+              href="http://www.linkedin.com/in/nick-east"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedinIcon />
+            </a>
+            <a
+              href="https://open.spotify.com/user/nickeast12?si=GeSIN_6YSeKYSKAFsmj-8A"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SpotifyIcon />
+            </a>
           </div>
           <p className="built">Designed &amp; Built by Nick East</p>
-          <div className="legal">
+          {/* <div className="legal">
             <p>Privacy Policy</p>
             <p>Cookie Policy</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </FooterStyles>

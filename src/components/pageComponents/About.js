@@ -24,9 +24,22 @@ const AboutStyles = styled.section`
       }
       p {
         margin: 1.5rem 0;
+        span {
+          a {
+            color: #4e94fc !important;
+            font-weight: 700;
+          }
+        }
         @media only screen and (min-width: 1280px) {
           width: 80%;
           margin: 1.5rem auto;
+        }
+      }
+      .today {
+        span {
+          a {
+            color: var(--mainColour) !important;
+          }
         }
       }
     }
@@ -101,37 +114,64 @@ const About = () => {
             <span>A nice catchy title to introduce me</span>
           </h2>
           <p className="willFade aboutFade">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            lobortis nisl ac risus facilisis aliquet. Curabitur blandit pulvinar
-            sodales. Etiam at elit et elit ultricies aliquet. Donec leo nibh,
-            egestas eu metus a, suscipit laoreet erat. Maecenas egestas sed ante
-            a lacinia. Nulla nec nunc nisl.
+            Hi, I'm Nick and I love creating and building things that live on
+            the web. I'm pretty much obsessed with anything electronic and have
+            been my Mum's tech support since 2012! Learning from the master{' '}
+            <span>
+              {' '}
+              <a
+                href="https://wesbos.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Wes Bos
+              </a>
+            </span>{' '}
+            and others in the tutorial space, I quickly become proficient in
+            JavaScript, Node.js and React and looking to develop my skills
+            further.
+          </p>
+          <p className="today">
+            Fast-forward to today and I've had the privilege to work for a
+            diverse array of clientele. I currently spend my time working on
+            projects for
+            <span>
+              {' '}
+              <a
+                href="https://www.nutcrackeragency.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Nutcracker agency
+              </a>
+            </span>
+            .
           </p>
         </div>
       </div>
       <div className="boxes">
         <div className="box willFade aboutFade ">
           <DesignIcon />
-          <h3>Designer</h3>
+          <h3>UX/UI Designer</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ex?
-            Et beatae dicta cumque laudantium.
+            I focus on clean, modern design trends and patterns using UX
+            techniques that deliver a punch 🤜
           </p>
         </div>
         <div className="box willFade aboutFade">
           <CodeIcon />
           <h3>Front-end Developer</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ex?
-            Et beatae dicta cumque laudantium.
+            Bringing ideas to life using JAMstack to build lightning-fast,
+            responsive websites ⚡.
           </p>
         </div>
         <div className="box willFade aboutFade">
           <ProblemSolverIcon />
           <h3>Problem solver</h3>
           <p id="experience">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, ex?
-            Et beatae dicta cumque laudantium.
+            Identifying and finding unique, creative ways to solve problems and
+            crush bugs 🐛 .
           </p>
         </div>
       </div>

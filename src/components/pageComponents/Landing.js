@@ -126,7 +126,7 @@ const Landing = () => {
             {/* <h1>I'm a Designer &amp; Front-end Developer</h1> */}
             {/* <h1>I'm a Front-end Developer &amp; Designer</h1> */}
             <p className="willFade reviewFade">
-              I’m a self-taught Front-end Developer and UI/UX designer based in
+              I’m a self-taught UI/UX designer and Front-end Developer based in
               London, UK.
             </p>
             <button type="button" className="btn btn--main willFade reviewFade">
