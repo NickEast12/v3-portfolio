@@ -103,20 +103,35 @@ const NavStyles = styled.nav`
       padding: 1.5rem 0;
     }
   }
-  .menu {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
+  .mobile-menu {
+    /* width: 100%;
+    height: 100rem;
+    position: fixed;
     top: 0;
     left: 0;
     transition: all 0.35s linear;
-    background-color: rgba(22, 33, 42, 0.7);
-    -webkit-backdrop-filter: saturate(180%) blur(14px) !important;
-    backdrop-filter: saturate(180%) blur(14px) !important;
-    max-height: ${({ open }) => (open ? '1000rem' : '0')};
-    height: ${({ open }) => (open ? '100vh' : '0')};
+    background-color: rgba(22, 33, 42, 0.75);
+    visibility: visible;
     opacity: 1;
-    z-index: 99;
+    backdrop-filter: saturate(190%) blur(14px);
+    max-height: ${({
+      open,
+    }) => (open ? '1000rem' : '0')};
+    height: ${({ open }) =>
+      open ? '100vh' : '0'}; */
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    z-index: -2;
+    transition: all 0.4s ease-in-out 0s;
+    background-color: rgba(22, 33, 42, 0.75);
+    backdrop-filter: saturate(280%) blur(24px);
+    opacity: 1;
+    opacity: ${({ open }) => (open ? '1' : '0')};
+    visibility: ${({ open }) => (open ? 'shown' : 'hidden')};
     ul {
       display: ${({ open }) => (open ? 'block' : 'none')};
       width: 80%;
@@ -138,6 +153,8 @@ const NavStyles = styled.nav`
           transition: all 0.35s ease;
           opacity: 0;
           transform: translateY(-10px);
+          z-index: 99;
+          position: relative;
           .nav-button {
             width: 70%;
           }
@@ -298,7 +315,7 @@ const Nav = () => {
             </ul>
           </div>
         </div>
-        <div className="menu" open={open}>
+        <div className="mobile-menu" open={open}>
           <ul>
             <Link to="/#about" onClick={() => setOpen(!open)}>
               <li>About</li>

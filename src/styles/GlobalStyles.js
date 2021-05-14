@@ -131,7 +131,11 @@ const GlobalStyles = createGlobalStyle`
         color: #fff!important;
         fill: #fff;
     }
-   
+   #mobileMenu {
+       background-color: rgba(22, 33, 42, 0.7);
+    -webkit-backdrop-filter: saturate(180%) blur(14px) !important;
+    backdrop-filter: saturate(180%) blur(14px) !important;
+   }
     .willFade {
         opacity: 0;
         transform: translateY(20px);
