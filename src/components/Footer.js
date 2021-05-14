@@ -144,7 +144,8 @@ const FooterCTAStyles = styled.section`
     }
     button {
       margin-top: 1rem;
-      width: 80%;
+      padding: 0.75rem 0;
+      width: 140px;
       max-width: 250px;
     }
     @media only screen and (min-width: 600px) {

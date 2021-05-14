@@ -87,8 +87,8 @@ const About = () => {
   const aboutRef = useRef(null);
   const contactIntersection = useIntersection(aboutRef, {
     root: null,
-    rootMargin: '0px',
-    threshold: 0.2,
+    rootMargin: '10px',
+    threshold: 1,
   });
   const contactFadeIn = (element) => {
     gsap.to(element, 1, {
@@ -111,7 +111,10 @@ const About = () => {
       <div className="about" ref={aboutRef}>
         <div className="about--me">
           <h2 className="willFade aboutFade">
-            <span>A nice catchy title to introduce me</span>
+            <span>
+              I specialise in designing and creating functional interfaces and
+              exceptional digital experiences.
+            </span>
           </h2>
           <p className="willFade aboutFade">
             Hi, I'm Nick and I love creating and building things that live on
@@ -128,8 +131,8 @@ const About = () => {
               </a>
             </span>{' '}
             and others in the tutorial space, I quickly become proficient in
-            JavaScript, Node.js and React and looking to develop my skills
-            further.
+            HTML, CSS, JavaScript, Node.js and React and looking to develop my
+            skills further.
           </p>
           <p className="today willFade aboutFade">
             Fast-forward to today and I've had the privilege to work for a

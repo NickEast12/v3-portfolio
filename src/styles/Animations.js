@@ -8,7 +8,7 @@ const Animations = createGlobalStyle`
     .active {
              background: #16222A;
              .nav {
-                 padding: .5rem 0;
+                 padding: .5rem 0!important;
              }
              .nav--menu {
                  div {

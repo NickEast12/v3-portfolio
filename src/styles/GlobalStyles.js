@@ -87,12 +87,22 @@ const GlobalStyles = createGlobalStyle`
         width: 100%;
         padding: .5rem 0; 
         border-radius: 2px;
+        cursor: pointer;
+        border: solid 2px var(--mainColour);
+        transition: all .35s ease-in-out;
         span {
-
+            transition: all .35s ease-in-out;
             font-size: var(--text);
-            font-family: var(--roboto);
-            letter-spacing: -.5px;
+            font-family: var(--title);
+            letter-spacing: -.25px;
             color: #fff;
+        }
+        &:hover {
+            background: #16212A;
+            border: solid 2px var(--mainColour);
+            span {
+                color: #fff;
+            }
         }
     }
     .btn--outline {
@@ -104,7 +114,6 @@ const GlobalStyles = createGlobalStyle`
     }
     .btn--main {
         background: #1DBC9B;
-        border: none;
         span {
             color: #16212A;
         }

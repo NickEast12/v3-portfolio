@@ -71,6 +71,7 @@ const LandingStyles = styled.header`
       margin-bottom: 0.95rem;
     }
     button {
+      transition: inherit;
       margin-top: 0.5rem;
       padding: 0.75rem 0;
       width: 140px;
@@ -129,9 +130,14 @@ const Landing = () => {
               I’m a self-taught UI/UX designer and Front-end Developer based in
               London, UK.
             </p>
-            <button type="button" className="btn btn--main willFade reviewFade">
-              <span>Say hello</span>
-            </button>
+            <a href="mailto:contact@nick-east.com" rel="noopener noreferrer">
+              <button
+                type="button"
+                className="btn btn--main willFade reviewFade"
+              >
+                <span>Say hello</span>
+              </button>
+            </a>
           </div>
         </div>
       </LandingStyles>

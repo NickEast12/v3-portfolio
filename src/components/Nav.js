@@ -92,11 +92,15 @@ const NavStyles = styled.nav`
             align-items: center;
             align-self: center;
             button {
-              width: 150px;
+              padding: 0.75rem 0;
+              width: 140px;
             }
           }
         }
       }
+    }
+    @media only screen and (min-width: 1280px) {
+      padding: 1.5rem 0;
     }
   }
   .menu {
@@ -281,9 +285,14 @@ const Nav = () => {
                 <Link to="/#blog">Blog</Link>
               </li>
               <li className="willFade navFade">
-                <button type="button" className="btn btn--main ">
-                  <span>Contact me</span>
-                </button>
+                <a
+                  href="mailto:contact@nick-east.com"
+                  rel="noopener noreferrer"
+                >
+                  <button type="button" className="btn btn--main ">
+                    <span>Say hello</span>
+                  </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -307,9 +316,14 @@ const Nav = () => {
               onClick={() => setOpen(!open)}
             >
               <li>
-                <button type="button" className="btn btn--main nav-button">
-                  <span>Contact me</span>
-                </button>
+                <a
+                  href="mailto:contact@nick-east.com"
+                  rel="noopener noreferrer"
+                >
+                  <button type="button" className="btn btn--main nav-button">
+                    <span>Say hello</span>
+                  </button>
+                </a>
               </li>
             </a>
             <div className="nav__icons">
