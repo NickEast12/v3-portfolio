@@ -111,6 +111,7 @@ const NavStyles = styled.nav`
     left: 0;
     transition: all 0.35s linear;
     background-color: rgba(22, 33, 42, 0.7);
+    -webkit-backdrop-filter: saturate(180%) blur(14px) !important;
     backdrop-filter: saturate(180%) blur(14px) !important;
     max-height: ${({ open }) => (open ? '1000rem' : '0')};
     height: ${({ open }) => (open ? '100vh' : '0')};
