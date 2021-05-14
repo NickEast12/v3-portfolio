@@ -87,8 +87,8 @@ const About = () => {
   const aboutRef = useRef(null);
   const contactIntersection = useIntersection(aboutRef, {
     root: null,
-    rootMargin: '10px',
-    threshold: 1,
+    rootMargin: '0px',
+    threshold: 0.3,
   });
   const contactFadeIn = (element) => {
     gsap.to(element, 1, {

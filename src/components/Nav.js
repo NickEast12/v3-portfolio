@@ -110,12 +110,12 @@ const NavStyles = styled.nav`
     top: 0;
     left: 0;
     transition: all 0.35s linear;
-    /* background: ${({ open }) =>
-      open ? 'rgba(22, 33, 41, 1)' : 'rgba(22, 33, 41, 0.85)'}; */
-    background-color: rgba(22, 33, 42, 0.85);
-    backdrop-filter: saturate(120%) blur(8px);
+    background-color: rgba(22, 33, 42, 0.7);
+    backdrop-filter: saturate(180%) blur(14px) !important;
     max-height: ${({ open }) => (open ? '1000rem' : '0')};
     height: ${({ open }) => (open ? '100vh' : '0')};
+    opacity: 1;
+    z-index: 99;
     ul {
       display: ${({ open }) => (open ? 'block' : 'none')};
       width: 80%;
