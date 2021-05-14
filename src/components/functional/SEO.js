@@ -22,9 +22,9 @@ export default function SEO({ children, location, description, title, img }) {
   return (
     <Helmet>
       <html lang="en" />
-      <title>{title}</title>
+      <title>{site.siteMetadata.title}</title>
       <link rel="stylesheet" href="https://use.typekit.net/ltj6ded.css" />
-      <meta name="description" content={description} />
+      <meta name="description" content={site.siteMetadata.description} />
       <link rel="canonical" href={`${site.siteMetadata.siteUrl}${pathname}`} />
       <link rel="icon" href="./assets/images/icon.png" />
       <link rel="alternate icon" href="./assets/images/favicon.ico" />
@@ -36,8 +36,8 @@ export default function SEO({ children, location, description, title, img }) {
         content={`${site.siteMetadata.siteUrl}${pathname}`}
       />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
+      <meta property="og:title" content={site.siteMetadata.title} />
+      <meta property="og:description" content={site.siteMetadata.description} />
       <meta property="og:image" content={img} />
 
       <meta name="twitter:card" content="summary_large_image" />
@@ -47,8 +47,11 @@ export default function SEO({ children, location, description, title, img }) {
         content={`${site.siteMetadata.siteUrl}${pathname}`}
       />
       <meta name="twitter:creator" content={site.siteMetadata.twitter} />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
+      <meta name="twitter:title" content={site.siteMetadata.title} />
+      <meta
+        name="twitter:description"
+        content={site.siteMetadata.description}
+      />
       <meta name="twitter:image" content={img} />
     </Helmet>
   );

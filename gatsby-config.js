@@ -4,10 +4,10 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-    title: `Enter`,
+    title: `Nick East | Front-end Developer`,
     siteUrl: `https://wwww.nick-east.com`,
-    description: `Enter`,
-    twitter: `@comebacktothis`,
+    description: `Nick East is a UX/UI Designer and Front-end developer specialising in designing and creating functional interfaces and exceptional digital experiences.`,
+    twitter: `@nickcodesbadly`,
     image: `/icon.png`,
   },
   plugins: [
@@ -41,9 +41,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Nick East `,
-        short_name: `Nick East`,
-        description: `I'm a front-end web developer based in London, UK. With a love for designing and writing code.`,
+        name: `Nick East | Front-end Developer`,
+        short_name: `Nick East | Front-end Developer`,
+        description: `Nick East is a UX/UI Designer and Front-end developer specialising in designing and creating functional interfaces and exceptional digital experiences.`,
         start_url: `/`,
         lang: `en`,
         background_color: `#162129`,

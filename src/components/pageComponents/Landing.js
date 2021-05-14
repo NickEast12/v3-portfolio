@@ -52,6 +52,9 @@ const LandingStyles = styled.header`
     h1 {
       margin-bottom: 1rem;
       font-weight: 500;
+      @media only screen and (min-width: 1280px) {
+        font-size: 3rem;
+      }
       span {
         font-weight: 700;
         position: relative;

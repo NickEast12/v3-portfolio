@@ -12,7 +12,10 @@ const index = () => {
   const i = true;
   return (
     <Layout>
-      <SEO />
+      <SEO
+        title="Nick East | Front-end Developer"
+        description="Nick East is a UX/UI Designer and Front-end developer specialising in designing and creating functional interfaces and exceptional digital experiences."
+      />
       <main>
         <Landing />
         <About />
