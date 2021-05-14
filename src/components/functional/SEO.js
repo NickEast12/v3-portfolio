@@ -41,7 +41,7 @@ export default function SEO({ children, location, description, title, img }) {
       <meta property="og:image" content={img} />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta property="twitter:domain" content="sortedpropertyservices.co.uk" />
+      <meta property="twitter:domain" content={site.siteMetadata.siteUrl} />
       <meta
         property="twitter:url"
         content={`${site.siteMetadata.siteUrl}${pathname}`}
