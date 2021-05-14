@@ -104,8 +104,8 @@ const NavStyles = styled.nav`
     }
   }
   .mobile-menu {
-    /* width: 100%;
-    height: 100rem;
+    width: 100%;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -113,13 +113,11 @@ const NavStyles = styled.nav`
     background-color: rgba(22, 33, 42, 0.75);
     visibility: visible;
     opacity: 1;
-    backdrop-filter: saturate(190%) blur(14px);
-    max-height: ${({
-      open,
-    }) => (open ? '1000rem' : '0')};
-    height: ${({ open }) =>
-      open ? '100vh' : '0'}; */
-    padding: 1.5rem 0;
+    backdrop-filter: saturate(200%) blur(14px);
+    /* max-height: ${({ open }) => (open ? '1000rem' : '0')}; */
+    opacity: ${({ open }) => (open ? '1' : '0')};
+
+    /* padding: 1.5rem 0;
     position: fixed;
     width: 100%;
     top: 0px;
@@ -128,10 +126,9 @@ const NavStyles = styled.nav`
     z-index: -2;
     transition: all 0.4s ease-in-out 0s;
     background-color: rgba(22, 33, 42, 0.75);
-    backdrop-filter: saturate(280%) blur(24px);
-    opacity: 1;
-    opacity: ${({ open }) => (open ? '1' : '0')};
-    visibility: ${({ open }) => (open ? 'shown' : 'hidden')};
+    backdrop-filter: saturate(80%) blur(24px);
+    opacity: 1; */
+
     ul {
       display: ${({ open }) => (open ? 'block' : 'none')};
       width: 80%;
