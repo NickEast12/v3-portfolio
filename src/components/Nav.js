@@ -111,11 +111,13 @@ const NavStyles = styled.nav`
     left: 0;
     transition: all 0.35s linear;
     background-color: rgba(22, 33, 42, 0.75);
-    visibility: visible;
+    visibility: ${({ open }) => (open ? 'visable' : 'hidden')};
+    vis
     opacity: 1;
     backdrop-filter: saturate(200%) blur(14px);
     /* max-height: ${({ open }) => (open ? '1000rem' : '0')}; */
     opacity: ${({ open }) => (open ? '1' : '0')};
+    z-index: ${({ open }) => (open ? '100' : '-100')};
 
     /* padding: 1.5rem 0;
     position: fixed;
@@ -128,7 +130,9 @@ const NavStyles = styled.nav`
     background-color: rgba(22, 33, 42, 0.75);
     backdrop-filter: saturate(80%) blur(24px);
     opacity: 1; */
-
+    @media only screen and (min-width: 1280px) {
+      display: none;
+    }
     ul {
       display: ${({ open }) => (open ? 'block' : 'none')};
       width: 80%;
