@@ -112,7 +112,6 @@ const NavStyles = styled.nav`
     transition: all 0.35s linear;
     background-color: rgba(22, 33, 42, 0.75);
     visibility: ${({ open }) => (open ? 'visable' : 'hidden')};
-    vis
     opacity: 1;
     backdrop-filter: saturate(200%) blur(14px);
     /* max-height: ${({ open }) => (open ? '1000rem' : '0')}; */
@@ -156,6 +155,7 @@ const NavStyles = styled.nav`
           transform: translateY(-10px);
           z-index: 99;
           position: relative;
+          color: white;
           .nav-button {
             width: 70%;
           }
@@ -335,14 +335,9 @@ const Nav = () => {
               onClick={() => setOpen(!open)}
             >
               <li>
-                <a
-                  href="mailto:contact@nick-east.com"
-                  rel="noopener noreferrer"
-                >
-                  <button type="button" className="btn btn--main nav-button">
-                    <span>Say hello</span>
-                  </button>
-                </a>
+                <button type="button" className="btn btn--main nav-button">
+                  <span>Say hello</span>
+                </button>
               </li>
             </a>
             <div className="nav__icons">

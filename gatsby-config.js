@@ -23,10 +23,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: [
-            'Roboto Mono Condensed:100,200,300,400,500,700',
-            'Lato Condensed:100,200,300,400,500,700',
-          ],
+          families: ['Roboto Mono', 'Lato Condensed'],
         },
       },
     },

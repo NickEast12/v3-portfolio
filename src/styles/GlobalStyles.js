@@ -128,8 +128,7 @@ const GlobalStyles = createGlobalStyle`
     }
     a {
         font-family: var(--title);
-        color: #fff!important;
-        fill: #fff;
+   
     }
    #mobileMenu {
        background-color: rgba(22, 33, 42, 0.7);
