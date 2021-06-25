@@ -4,6 +4,8 @@ import { Gradient } from 'react-gradient';
 
 //* Local imports
 import Layout from '../components/Layout';
+import MetaImg from '../assets/images/meta-img.png';
+import SEO from '../components/functional/SEO';
 
 const UsesStyles = styled.section`
   width: 100%;
@@ -63,6 +65,11 @@ const Uses = () => {
   const i = true;
   return (
     <Layout>
+      <SEO
+        title="Uses |Nick East | Front-end Developer"
+        description="Nick East is a UX/UI Designer and Front-end developer specialising in designing and creating functional interfaces and exceptional digital experiences."
+        img={MetaImg}
+      />
       <UsesHeader />
       <UsesStyles>
         <div className="uses">

@@ -74,10 +74,25 @@ const LandingStyles = styled.header`
       margin-bottom: 0.95rem;
     }
     button {
-      transition: inherit;
       margin-top: 0.5rem;
       padding: 0.75rem 0;
       width: 140px;
+      border-radius: 4.5px;
+      cursor: pointer;
+      border: none;
+      span {
+        font-size: var(--text);
+        font-family: var(--title);
+        letter-spacing: -0.25px;
+        color: #fff;
+      }
+      background-color: var(--mainColour);
+      span {
+        color: #fff;
+      }
+      &:hover {
+        background-color: #01767b;
+      }
     }
   }
 `;
@@ -85,8 +100,9 @@ const Landing = () => {
   const gradients = [
     ['#16222A', '#3A6073'],
     ['#0A1A2E', '#093637'],
-    ['#4e94fb', '#69ffb7'],
+    ['#29323c', '#304352'],
   ];
+
   const reviewRef = useRef(null);
   const contactIntersection = useIntersection(reviewRef, {
     root: null,
@@ -134,10 +150,7 @@ const Landing = () => {
               London, UK.
             </p>
             <a href="mailto:contact@nick-east.com" rel="noopener noreferrer">
-              <button
-                type="button"
-                className="btn btn--main willFade reviewFade"
-              >
+              <button type="button" className=" willFade reviewFade">
                 <span>Say hello</span>
               </button>
             </a>
@@ -150,12 +163,6 @@ const Landing = () => {
 
 export default Landing;
 
-// &:nth-child(1n) {
-//   background: #4e94fb;
-// }
-// &:nth-child(2n) {
-//   background: #69ffb7;
-// }
-// &:nth-child(3n) {
-//   background: #ef5e93;
-// }
+// ['#16222A', '#3A6073'],
+// ['#0A1A2E', '#093637'],
+// ['#4e94fb', '#69ffb7'],

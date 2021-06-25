@@ -5,7 +5,7 @@ import gsap from 'gsap';
 import Image from '../functional/Image';
 import UCtelLogo from '../../svgs/uctel-logo.svg';
 import NutcrackerLogo from '../../svgs/nutcracker-logo.svg';
-import SortedLogo from '../../svgs/sorted.svg';
+import RPILogo from '../../svgs/rpi-logo.svg';
 import ZanoLogo from '../../svgs/zano-logo.svg';
 import VSLogo from '../../svgs/vs-logo.svg';
 import Github from '../../svgs/github.svg';
@@ -84,9 +84,17 @@ const WorkStyles = styled.section`
           height: 100%;
           display: flex;
           justify-content: center;
+          align-items: center;
           svg {
             position: relative;
-            width: 190px;
+            width: 200px;
+            height: 200px;
+            padding: 0.25rem;
+          }
+        }
+        .rpi-logo {
+          svg {
+            padding: 1.5rem;
           }
         }
         .overlay {
@@ -185,6 +193,31 @@ const Work = () => {
         </p>
         <div className="work__boxes">
           <section className="willFade workFade">
+            <Image filename="rpi.jpeg" alt="RPI" />
+            <div className="box--logo rpi-logo">
+              <RPILogo />
+            </div>
+            <div className="overlay">
+              <p>A global technology lead recruitment agency </p>
+              <div>
+                <a
+                  href="https://github.com/NickEast12/rpi-website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github />
+                </a>
+                <a
+                  href="https://www.rpint.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkIcon />
+                </a>
+              </div>
+            </div>
+          </section>
+          <section className="willFade workFade">
             <Image filename="uctel.jpeg" alt="UCtel" />
             <div className="box--logo">
               <UCtelLogo />
@@ -234,6 +267,7 @@ const Work = () => {
               </div>
             </div>
           </section>
+
           <section className="willFade workFade">
             <Image filename="vs.png" alt="Vine Street Solutions" />
             <div className="box--logo">
@@ -247,31 +281,6 @@ const Work = () => {
               <div>
                 <a
                   href="http://www.vinestreet.solutions"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <LinkIcon />
-                </a>
-              </div>
-            </div>
-          </section>
-          <section className="willFade workFade">
-            <Image filename="sorted.jpeg" alt="Sorted Property Services" />
-            <div className="box--logo">
-              <SortedLogo />
-            </div>
-            <div className="overlay">
-              <p>Southeast London's property maintenance experts.</p>
-              <div>
-                <a
-                  href="https://github.com/NickEast12/sorted-property-services"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Github />
-                </a>
-                <a
-                  href="https://www.sortedpropertyservices.co.uk/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -310,7 +319,7 @@ const Work = () => {
           </section>
           <section className="willFade workFade" id="blog">
             <Image filename="zano.jpeg" alt="Zano Controls" />
-            <div className="box--logo">
+            <div className="box--logo rpi-logo">
               <ZanoLogo />
             </div>
             <div className="overlay">

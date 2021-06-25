@@ -8,7 +8,7 @@ module.exports = {
     siteUrl: `https://wwww.nick-east.com`,
     description: `Nick East is a UX/UI Designer and Front-end developer specialising in designing and creating functional interfaces and exceptional digital experiences.`,
     twitter: `@nickcodesbadly`,
-    image: `/icon.png`,
+    image: `/nick-logo.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -46,7 +46,7 @@ module.exports = {
         background_color: `#162129`,
         theme_color: `#1bbc9b`,
         display: `minimal-ui`,
-        icon: `./src/assets/images/icon.png`,
+        icon: `./src/assets/images/nick-logo.png`,
       },
     },
     {

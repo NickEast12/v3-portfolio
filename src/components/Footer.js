@@ -2,7 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import styled from 'styled-components';
 //* Local imports
-import Logo from '../svgs/logo.svg';
+import Logo from '../svgs/logo-column.svg';
 import GithubIcon from '../svgs/github.svg';
 import LinkedinIcon from '../svgs/linkedin.svg';
 import SpotifyIcon from '../svgs/spotify.svg';
@@ -12,7 +12,7 @@ const FooterStyles = styled.footer`
   background: #16222a;
   .footer {
     max-width: var(--maxWidth);
-    padding: 2.5rem 0 2rem 0;
+    padding: 5.5rem 0 2rem 0;
     width: 90%;
     margin: 0 auto;
     @media only screen and (min-width: 600px) {
@@ -29,6 +29,7 @@ const FooterStyles = styled.footer`
       text-align: center;
       > svg {
         width: 110px;
+        fill: #fff;
       }
       &__icons {
         display: flex;
@@ -125,7 +126,6 @@ const FooterCTAStyles = styled.section`
     left: 0;
     position: absolute;
     box-shadow: rgba(17, 12, 46, 0.95) 0px 48px 100px 0px;
-    /* background: #4e94fc; */
     background: #fff;
 
     border-radius: 5px;

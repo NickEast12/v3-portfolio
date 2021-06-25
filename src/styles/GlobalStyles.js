@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
     :root {
         //*Colours
-        --mainColour: #1DBC9B;
+        --mainColour: #02AAB0;
         --secondaryColour: #F4F5F6;
         --backgroundColour: #16212A;
         --opacityBackground: rgba(22,33,42, .99);
@@ -86,10 +86,11 @@ const GlobalStyles = createGlobalStyle`
     .btn {
         width: 100%;
         padding: .5rem 0; 
-        border-radius: 2px;
+        border-radius: 4.5px;
         cursor: pointer;
-        border: solid 2px var(--mainColour);
+        border: none;
         transition: all .35s ease-in-out;
+        
         span {
             transition: all .35s ease-in-out;
             font-size: var(--text);
@@ -97,13 +98,7 @@ const GlobalStyles = createGlobalStyle`
             letter-spacing: -.25px;
             color: #fff;
         }
-        &:hover {
-            background: #16212A;
-            border: solid 2px var(--mainColour);
-            span {
-                color: #fff;
-            }
-        }
+       
     }
     .btn--outline {
         background: none;
@@ -113,11 +108,15 @@ const GlobalStyles = createGlobalStyle`
         }
     }
     .btn--main {
-        background: #1DBC9B;
+        background-color: var(--mainColour);
         span {
-            color: #16212A;
+            color: #fff;
         }
-    }
+        &:hover {
+            background-color: #01767B;
+        }
+       
+    }    
     p , li, input, address, label,input, textarea  {
       font-family: var(--title);
       font-feature-settings: "kern" 1;

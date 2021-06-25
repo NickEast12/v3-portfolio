@@ -4,11 +4,10 @@ import { window } from 'browser-monads';
 import styled from 'styled-components';
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
-import { StaticImage } from 'gatsby-plugin-image';
 import Github from '../svgs/github.svg';
 import LinkedIn from '../svgs/linkedin.svg';
 import Spotify from '../svgs/spotify.svg';
-import Logo from '../svgs/logo.svg';
+import Logo from '../svgs/logo-row.svg';
 
 const NavStyles = styled.nav`
   z-index: 999;
@@ -44,9 +43,12 @@ const NavStyles = styled.nav`
         height: auto;
       }
       svg {
-        fill: black;
-        width: 45px;
+        fill: #fff;
+        width: 120px;
         height: 100%;
+        @media only screen and (min-width: 1024px) {
+          width: 150px;
+        }
       }
     }
     &--menu {
@@ -158,6 +160,8 @@ const NavStyles = styled.nav`
           color: white;
           .nav-button {
             width: 70%;
+            max-width: 130px;
+            padding: 0.85rem 0;
           }
           &:hover {
             color: var(--mainColour);

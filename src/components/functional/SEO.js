@@ -26,7 +26,7 @@ export default function SEO({ children, location, description, title, img }) {
       <link rel="stylesheet" href="https://use.typekit.net/ltj6ded.css" />
       <meta name="description" content={site.siteMetadata.description} />
       <link rel="canonical" href={`${site.siteMetadata.siteUrl}${pathname}`} />
-      <link rel="icon" href="./assets/images/icon.png" />
+      <link rel="icon" href="./assets/images/nick-logo.png" />
       <link rel="alternate icon" href="./assets/images/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta charSet="utf-8" />
