@@ -6,6 +6,7 @@ import gsap from 'gsap';
 const LowerAboutStyles = styled.section`
   width: 100%;
   padding: 0 0 2rem 0;
+  background-color: #fff;
   .la {
     width: 90%;
     margin: 0 auto;

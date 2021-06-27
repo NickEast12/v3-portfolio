@@ -1,28 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
+import Typography from './Typography';
+import Vars from './Vars';
+import Animations from './Animations';
 
 const GlobalStyles = createGlobalStyle`
-    :root {
-        //*Colours
-        --mainColour: #02AAB0;
-        --secondaryColour: #F4F5F6;
-        --backgroundColour: #16212A;
-        --opacityBackground: rgba(22,33,42, .99);
-        --opacityAlt: rgba(244,245,246, .55);
-        //*Font
-        --roboto: RobotoMono,  -apple-system, system-ui, "Helvetica Neue",Helvetica,Arial,sans-serif;
-        --title: Lato,  -apple-system, system-ui, "Helvetica Neue",Helvetica,Arial,sans-serif;        
-        //*Font-size
-        --titleLarge: 2.6rem;
-        --titleSemiLarge: 2.441rem;
-        --titleMedium: 1.953rem;
-        --titleSmall: 1.563rem;
-        --titleExtraSmall: 1.25rem;
-        --text: 1rem;
-        --textMedium: .95rem;
-        //*Max-width
-        --maxWidth: 1100px;
-        
-    }
+  ${Vars}
+  ${Typography}
+  ${Animations}
     *, *:after, *:before {
         box-sizing: border-box;
         margin: 0;

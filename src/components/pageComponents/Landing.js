@@ -143,8 +143,6 @@ const Landing = () => {
             <h1 className="willFade reviewFade">
               I build <span>Websites</span> and other cool things for the web!
             </h1>
-            {/* <h1>I'm a Designer &amp; Front-end Developer</h1> */}
-            {/* <h1>I'm a Front-end Developer &amp; Designer</h1> */}
             <p className="willFade reviewFade">
               I’m a self-taught UI/UX designer and Front-end Developer based in
               London, UK.
@@ -162,7 +160,3 @@ const Landing = () => {
 };
 
 export default Landing;
-
-// ['#16222A', '#3A6073'],
-// ['#0A1A2E', '#093637'],
-// ['#4e94fb', '#69ffb7'],

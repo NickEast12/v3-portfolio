@@ -305,6 +305,9 @@ const Nav = () => {
                 <Link to="/#work">Work</Link>
               </li>
               <li className="willFade navFade">
+                <Link to="/uses">Uses</Link>
+              </li>
+              <li className="willFade navFade">
                 <Link to="/#blog">Blog</Link>
               </li>
               <li className="willFade navFade">
@@ -330,6 +333,9 @@ const Nav = () => {
             </Link>
             <Link to="/#work" onClick={() => setOpen(!open)}>
               <li>Work</li>
+            </Link>
+            <Link to="/uses" onClick={() => setOpen(!open)}>
+              <li>Uses</li>
             </Link>
             <Link to="/#blog" onClick={() => setOpen(!open)}>
               <li>Blog</li>

@@ -8,7 +8,6 @@ import ProblemSolverIcon from '../../svgs/code-error.svg';
 
 const AboutStyles = styled.section`
   width: 100%;
-  /* background-color: var(--secondaryColour); */
   background-color: #fff;
   padding: 5rem 0;
   .about {

@@ -14,13 +14,11 @@ import LashBaseIcon from '../../svgs/lashbase.svg';
 
 const WorkStyles = styled.section`
   width: 100%;
-  padding-bottom: 2rem;
-  /* background: rgba(222, 222, 222, 0.25); */
+  background-color: #fff;
   .work {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
-    max-width: var(--maxWidth);
     h4 {
       font-size: 2rem;
       font-weight: 600;
@@ -28,6 +26,7 @@ const WorkStyles = styled.section`
     > p {
       width: 90%;
       margin: 1rem auto 1.5rem auto;
+      max-width: 600px;
       span {
         a {
           color: var(--mainColour) !important;
@@ -36,12 +35,10 @@ const WorkStyles = styled.section`
       }
     }
     &__boxes {
-      margin-top: 2rem;
-      width: 90%;
+      width: 100%;
       margin: 2rem auto 0 auto;
       section {
-        border-radius: 20px;
-        height: 12rem;
+        height: 14rem;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         &:nth-child(2) {
           .gatsby-image-wrapper {
@@ -51,19 +48,16 @@ const WorkStyles = styled.section`
           }
         }
         @media only screen and (min-width: 375px) {
-          height: 14rem;
+          height: 16rem;
         }
         position: relative;
-        /* transition: all 0.35s ease-in-out; */
         transition: inherit;
-        margin-bottom: 1.5rem;
         &:hover {
           .overlay {
             opacity: 1;
           }
         }
         .gatsby-image-wrapper {
-          border-radius: 20px;
           height: 100%;
           width: 100%;
           &::after {
@@ -99,7 +93,6 @@ const WorkStyles = styled.section`
         }
         .overlay {
           transition: all 0.35s ease-in-out;
-          border-radius: 20px;
           opacity: 0;
           width: 100%;
           height: 100%;
@@ -124,6 +117,10 @@ const WorkStyles = styled.section`
               width: 22.5px;
               height: 22.5px;
               fill: #fff;
+              transition: fill 0.45s ease;
+              &:hover {
+                fill: var(--mainColour);
+              }
             }
           }
         }
@@ -132,7 +129,6 @@ const WorkStyles = styled.section`
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 0.25rem;
         section {
           height: 15rem;
           margin-bottom: 0;
@@ -140,9 +136,8 @@ const WorkStyles = styled.section`
       }
       @media only screen and (min-width: 1280px) {
         width: 100%;
-        grid-gap: 1rem;
         section {
-          height: 14rem;
+          height: 16rem;
         }
       }
     }

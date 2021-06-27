@@ -198,7 +198,7 @@ const UsesHeader = () => {
   const gradients = [
     ['#16222A', '#3A6073'],
     ['#0A1A2E', '#093637'],
-    ['#4e94fb', '#69ffb7'],
+    ['#29323c', '#304352'],
   ];
   return (
     <UsesHeaderStyles>

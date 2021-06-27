@@ -6,7 +6,7 @@ import Landing from '../components/pageComponents/Landing';
 import About from '../components/pageComponents/About';
 import Experience from '../components/pageComponents/Experience';
 import Work from '../components/pageComponents/Work';
-import Blog from '../components/pageComponents/Blog';
+import CTA from '../components/CTA';
 import MetaImg from '../assets/images/meta-img.png';
 
 const index = () => {
@@ -18,13 +18,12 @@ const index = () => {
         description="Nick East is a UX/UI Designer and Front-end developer specialising in designing and creating functional interfaces and exceptional digital experiences."
         img={MetaImg}
       />
-      <main>
-        <Landing />
-        <About />
-        <Experience />
-        <Work />
-        <Blog />
-      </main>
+      <Landing />
+      <About />
+      <Experience />
+      <Work />
+      <CTA />
+      {/* <Blog /> */}
     </Layout>
   );
 };
