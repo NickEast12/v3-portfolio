@@ -10,9 +10,6 @@ import SpotifyIcon from '../svgs/spotify.svg';
 const FooterStyles = styled.footer`
   width: 100%;
   background: #16222a;
-  position: fixed;
-  bottom: 0;
-  z-index: -5;
   .footer {
     max-width: var(--maxWidth);
     padding: 2rem 0;
@@ -21,13 +18,10 @@ const FooterStyles = styled.footer`
     @media only screen and (min-width: 600px) {
       width: 80%;
     }
-    @media only screen and (min-width: 1280px) {
-      margin-top: 3rem;
-    }
     &__wrapper {
       padding-top: 1rem;
       @media only screen and (min-width: 1280px) {
-        padding-top: 12rem;
+        padding-top: 2rem;
       }
       text-align: center;
       > svg {

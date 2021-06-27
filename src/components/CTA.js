@@ -7,7 +7,6 @@ const FooterCTAStyles = styled.section`
   margin: 0 auto;
   background: rgb(2, 170, 176);
   background: linear-gradient(344deg, #3a6073 43%, rgba(22, 33, 42, 1) 92%);
-  margin-bottom: 20rem;
   .cta {
     text-align: center;
     max-width: var(--maxWidth);
