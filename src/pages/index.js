@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'gatsby';
+import React from 'react';
 import Layout from '../components/Layout';
 import SEO from '../components/functional/SEO';
 import Landing from '../components/pageComponents/Landing';

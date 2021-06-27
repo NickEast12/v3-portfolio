@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import { useIntersection } from 'react-use';
 import gsap from 'gsap';
@@ -11,6 +12,7 @@ import VSLogo from '../../svgs/vs-logo.svg';
 import Github from '../../svgs/github.svg';
 import LinkIcon from '../../svgs/link.svg';
 import LashBaseIcon from '../../svgs/lashbase.svg';
+import Test from '../../assets/images/rpi.jpeg';
 
 const WorkStyles = styled.section`
   width: 100%;
@@ -188,7 +190,11 @@ const Work = () => {
         </p>
         <div className="work__boxes">
           <section className="willFade workFade">
-            <Image filename="rpi.jpeg" alt="RPI" />
+            <StaticImage
+              src="../../assets/images/rpi.jpeg"
+              alt="RPI"
+              placeholder="blurred"
+            />
             <div className="box--logo rpi-logo">
               <RPILogo />
             </div>
@@ -213,7 +219,11 @@ const Work = () => {
             </div>
           </section>
           <section className="willFade workFade">
-            <Image filename="uctel.jpeg" alt="UCtel" />
+            <StaticImage
+              src="../../assets/images/uctel.jpeg"
+              alt="UCtel"
+              placeholder="blurred"
+            />
             <div className="box--logo">
               <UCtelLogo />
             </div>
@@ -238,7 +248,11 @@ const Work = () => {
             </div>
           </section>
           <section className="willFade workFade">
-            <Image filename="nutcracker.jpeg" alt="Nutcracker Agency" />
+            <StaticImage
+              src="../../assets/images/nutcracker.jpeg"
+              alt="Nutcracker Agency"
+              placeholder="blurred"
+            />
             <div className="box--logo">
               <NutcrackerLogo />
             </div>
@@ -262,9 +276,12 @@ const Work = () => {
               </div>
             </div>
           </section>
-
           <section className="willFade workFade">
-            <Image filename="vs.png" alt="Vine Street Solutions" />
+            <StaticImage
+              src="../../assets/images/vs.png"
+              alt="Vine Street Solutions"
+              placeholder="blurred"
+            />
             <div className="box--logo">
               <VSLogo />
             </div>
@@ -285,7 +302,11 @@ const Work = () => {
             </div>
           </section>
           <section className="willFade workFade">
-            <Image filename="lashbase.jpg" alt="LashBase" />
+            <StaticImage
+              src="../../assets/images/lashbase.jpg"
+              alt="LashBase"
+              placeholder="blurred"
+            />
             <div className="box--logo">
               <LashBaseIcon />
             </div>
@@ -313,7 +334,11 @@ const Work = () => {
             </div>
           </section>
           <section className="willFade workFade" id="blog">
-            <Image filename="zano.jpeg" alt="Zano Controls" />
+            <StaticImage
+              src="../../assets/images/zano.jpeg"
+              alt="Zano Controls"
+              placeholder="blurred"
+            />
             <div className="box--logo rpi-logo">
               <ZanoLogo />
             </div>
