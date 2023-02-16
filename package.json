@@ -39,6 +39,7 @@
     "gatsby-plugin-gatsby-cloud": "^2.8.1",
     "gatsby-plugin-gdpr-cookies": "^2.0.6",
     "gatsby-plugin-google-analytics": "^3.8.0",
+    "gatsby-plugin-google-tagmanager": "^5.6.0",
     "gatsby-plugin-image": "^1.8.0",
     "gatsby-plugin-manifest": "^3.8.0",
     "gatsby-plugin-nprogress": "^3.8.0",
